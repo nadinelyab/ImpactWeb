@@ -19,8 +19,15 @@
   </div> 
 
   <div class="field">
+    <%= f.label :timezone %><br />
+    <%= f.time_zone_select :timezone %>
+  </div>
+
+  <div class="field">
     <%= f.label :skype_name %><br />
     <%= f.text_field :skype_name%>
+    Don't have skype?
+    <a href= "https://login.skype.com/account/signup-form">Sign up here</a>
   </div> 
 
   <div class="field">
@@ -47,6 +54,8 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
+
+  <div class="g-recaptcha" data-sitekey="6LeE0hUTAAAAAK9bIVnD7pMhg2tjdKutaJdzVaxV"></div>
 
   <div class="actions">
     <%= f.submit "Sign up" %>
