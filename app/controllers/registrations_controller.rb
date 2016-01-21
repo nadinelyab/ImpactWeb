@@ -7,7 +7,7 @@ class RegistrationsController < Devise::RegistrationsController
     if verify_recaptcha
     	super
     else
-    	render 'new'
+    	redirect_to new_user_registration_path(resource)
     end
   end
 

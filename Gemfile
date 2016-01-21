@@ -30,7 +30,7 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
 
 #captcha
-gem 'recaptcha', '~> 0.3.5'
+gem 'recaptcha', require: "recaptcha/rails", github: "ambethia/recaptcha"
 gem 'bcrypt', '~> 3.1.2'
 
 

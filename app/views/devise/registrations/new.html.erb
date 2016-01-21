@@ -8,6 +8,11 @@
     <%= f.text_field :name%>
   </div> 
 
+  <div class="field">
+    <%= f.label :lastname %><br />
+    <%= f.text_field :lastname%>
+  </div> 
+
    <div class="field">
     <%= f.label :age %><br />
     <%= f.text_field :age%>
@@ -55,7 +60,7 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
-  <div class="g-recaptcha" data-sitekey="6LeE0hUTAAAAAK9bIVnD7pMhg2tjdKutaJdzVaxV"></div>
+  <%= recaptcha_tags %>
 
   <div class="actions">
     <%= f.submit "Sign up" %>

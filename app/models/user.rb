@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  validates :name, :age, :country, :timezone, :skype_name, :gender, presence: true
+  validates :name, :age, :country, :timezone, :skype_name, :gender, 
+  :lastname, presence: true
 
 end
