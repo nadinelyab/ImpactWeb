@@ -7,4 +7,5 @@ class User < ActiveRecord::Base
   validates :name, :age, :country, :timezone, :skype_name, :gender, 
   :lastname, presence: true
 
+  has_and_belongs_to_many :projects
 end
