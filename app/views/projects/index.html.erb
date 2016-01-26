@@ -1,0 +1,9 @@
+<h1>Welcome to Impact!</h1>
+
+<% @projects.each do |project| %>
+	<p>Name: 
+		<%= link_to project.name, project_path(project) %>
+	</p>
+<%end%>
+
+<p><%= link_to "New Project", new_project_path %></p>
